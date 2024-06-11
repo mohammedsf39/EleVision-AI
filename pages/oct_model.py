@@ -81,7 +81,7 @@ def app_config():
 
 def render_side_bar():
     st.sidebar.image('logo.png', width=200)
-    doctor = Doctor(name="John Doe", associated_hospital="ElOued hospital")
+    doctor = Doctor(name="Guest", associated_hospital="Unavailable Hospital")
     st.sidebar.title("Doctor Profile")
     st.sidebar.write(f"Dr. {doctor.name}")
     st.sidebar.write(f"{doctor.associated_hospital}")
